@@ -174,5 +174,5 @@ DEPENDENCIES
   redis-rails
   redis-store
   sdoc
-  twitter (~> 5.0.0)
+  twitter (= 5.0.0)
   uglifier (>= 1.3.0)
