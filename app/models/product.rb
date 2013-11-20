@@ -2,7 +2,15 @@ class Product < ActiveRecord::Base
 	has_many :reviews
 
 	def tweets 
-		TwitterClient.user_timeline(self.twitter_user).map(&:text)
+			Rails.cache.fetch(["tweets", self.twitter_name], expires_in: 30.seconds) do 
+			TwitterClient.user_timeline(self.twitter_name).map(&:text)
+		end 
 	end 
-
 end
+
+
+
+
+
+
+

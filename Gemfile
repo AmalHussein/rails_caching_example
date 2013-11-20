@@ -7,7 +7,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 
-
 gem 'twitter' , '~> 5.0.0'
 # Caching starts here
 gem 'redis-store'
